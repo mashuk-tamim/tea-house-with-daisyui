@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tea House</title>
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font: manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- font awesome kit -->
+    <!-- <script src="https://kit.fontawesome.com/ecb685900b.js" crossorigin="anonymous"></script> -->
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'title-color': '#1C1C1C',
+                        'para-color': '#777',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <header>
+        <!-- hero section -->
+        <div class="hero max-w-screen-lg mx-auto mt-20">
+            <div class="hero-content flex-col lg:flex-row-reverse px-10 md:px-20">
+                <div class="relative">
+                    <div >
+                        <img src="/images/banner.png" class="max-w-lg" />
+                    </div>
+                    <div class="flex items-center drop-shadow-md gap-5 bg-white rounded-lg p-5 w-1/2 absolute bottom-5 left-5">
+                        <div class="">
+                            <img src="images/Group 5.svg" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold text-3xl">5.0</h2>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-7xl font-extrabold text-title-color">It's good <br>tea time at The<br>Tea House!
+                    </h1>
+                    <p class="text-para-color text-lg py-7">Tea and Botanical Solutions Supplier Give Optimum
+                        Satisfaction To Your Taste Buds.</p>
+                    <button
+                        class="btn font-bold text-lg text-white bg-gradient-to-r from-[#FF8938] to-[#f00] normal-case">Explore
+                        more <img src="images/arrow.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
